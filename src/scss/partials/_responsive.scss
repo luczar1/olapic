@@ -1,0 +1,33 @@
+@media (max-width: 1023px) {
+  .main-container {
+    #grid-container {
+      .grid-item {
+        width: calc(50% - 20px);
+        padding-bottom: calc(50% - 20px);
+      }
+    }
+
+    #filter-container {
+      width: calc(100% - 20px);
+      margin: 0 auto 30px;
+      justify-content: flex-start;
+      overflow: auto;
+
+      .filter-button:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .main-container {
+    #grid-container {
+      .grid-item {
+        width: 100%;
+        margin: 0 0 15px;
+        padding-bottom: 100%;
+      }
+    }
+  }
+}
