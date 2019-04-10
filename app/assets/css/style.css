@@ -8,7 +8,8 @@ html {
 
 body {
   font: 300 13px/1.6 "Helvetica Neue", Helvetica, Arial;
-  color: #444; }
+  color: #444;
+  transition: all 0.4s 0.3s ease-in; }
 
 body,
 html {
@@ -402,8 +403,7 @@ textarea {
   width: 80%;
   max-width: 1170px;
   display: block;
-  margin: 0 auto;
-  pointer-events: none; }
+  margin: 0 auto; }
   .main-container #gallery-header {
     display: block;
     text-align: center; }

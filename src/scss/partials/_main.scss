@@ -3,7 +3,7 @@
   max-width: 1170px;
   display: block;
   margin: 0 auto;
-  pointer-events: none;
+  //pointer-events: none; This was blocking the screen so it cant be clicked
 
   #gallery-header {
     display: block;
