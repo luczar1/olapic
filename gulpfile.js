@@ -54,7 +54,7 @@ gulp.task('js', async function(){
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('app/assets/js'))
-    .pipe(browserSync.reload({stream:true, once: true}));
+    .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('browser-sync', function() {
