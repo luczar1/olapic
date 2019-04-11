@@ -397,7 +397,31 @@ textarea {
   padding-top: 15px; }
 
 .btn-lg {
-  font-size: 1.75rem; }
+  font-family: Arial;
+  font-size: 14pt;
+  color: black; }
+
+.h1 {
+  font-family: futuraMedium, serif;
+  font-size: 28pt;
+  color: black; }
+
+.h2 {
+  font-family: futuraStdBook;
+  font-size: 20px;
+  color: rgba(10, 10, 10, 0.29); }
+
+@font-face {
+  font-family: 'futuraMedium';
+  src: url("/app/assets/fonts/futuraMedium.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futuraStdBook';
+  src: url("/app/assets/fonts/futuraStdBook.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
 
 .main-container {
   width: 80%;
