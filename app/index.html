@@ -18,9 +18,10 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <script src="assets/components/modernizr/modernizr.js"></script>
+    <script src="assets/js/filter.js"></script>
 </head>
 
-<body>
+<body onload="filterSelection('all')">
 <div class="main-container">
     <div class="row">
         <div class="col-sm-12">
@@ -38,32 +39,35 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav mx-auto" id="myBtnContainer">
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <button class="btn btn-outline-secondary btn-lg"> All</button>
+                        <button class="btn btn-outline-secondary btn-lg" onclick="filterSelection('all')"> All</button>
                         <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <button class="btn btn-outline-secondary btn-lg">Men</button>
+                        <button class="btn btn-outline-secondary btn-lg" onclick="filterSelection('men')">Men</button>
                         <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <button class="btn btn-outline-secondary btn-lg" onclick="class:selected">Woman</button>
+                        <button class="btn btn-outline-secondary btn-lg" onclick="filterSelection('woman')">Woman</button>
                         <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <button class="btn btn-outline-secondary btn-lg">Kids</button>
+                        <button class="btn btn-outline-secondary btn-lg" onclick="filterSelection('kids')">Kids</button>
                         <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <button class="btn btn-outline-secondary btn-lg">Accessories</button>
+                        <button class="btn btn-outline-secondary btn-lg" onclick="filterSelection('accessories')">
+                            Accessories
+                        </button>
                         <span class="sr-only">(current)</span></a>
                 </li>
+
             </ul>
         </div>
     </nav>
@@ -72,33 +76,33 @@
     <div class="row">
         <div class="col-sm-6">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 filterDiv men">
                     <img src="https://placeimg.com/500/500/any?asdasd" class="featured-content"
                          style="width: 100%"/>
                 </div>
-                <div class="col-6">
+                <div class="col-6 filterDiv woman">
                     <img src="https://placeimg.com/500/500/any?4564" class="featured-content" style="width: 100%"/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12" filterDiv kids>
                     <img src="https://placeimg.com/500/500/any?hgdg5" class="featured-content" style="width: 100%"/>
                 </div>
             </div>
         </div>
         <div class="col-sm-6">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 filterDiv accessories">
                     <img src="https://placeimg.com/500/500/any?123sdfds" class="featured-content"
                          style="width: 100%"/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 filterDiv men">
                     <img src="https://placeimg.com/500/500/any?sdfsd4" class="featured-content"
                          style="width: 100%"/>
                 </div>
-                <div class="col-6">
+                <div class="col-6 filterDiv woman">
                     <img src="https://placeimg.com/500/500/any?dfsdgdd4" class="featured-content"
                          style="width: 100%"/>
                 </div>
@@ -109,31 +113,31 @@
     <div class="row">
         <div class="col-sm-6">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 filterDiv kids">
                     <img src="https://placeimg.com/500/500/any?hffg" class="featured-content" style="width: 100%"/>
                 </div>
-                <div class="col-6">
+                <div class="col-6 filterDiv accessories">
                     <img src="https://placeimg.com/500/500/any?f53ev" class="featured-content" style="width: 100%"/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 filterDiv men">
                     <img src="https://placeimg.com/500/500/any?kythg" class="featured-content" style="width: 100%"/>
                 </div>
             </div>
         </div>
         <div class="col-sm-6">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 filterDiv woman">
                     <img src="https://placeimg.com/500/500/any?f4wb" class="featured-content" style="width: 100%"/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 filterDiv kids">
                     <img src="https://placeimg.com/500/500/any?ltrfdv4" class="featured-content"
                          style="width: 100%"/>
                 </div>
-                <div class="col-6">
+                <div class="col-6 filterDiv accessories">
                     <img src="https://placeimg.com/500/500/any?by5" class="featured-content" style="width: 100%"/>
                 </div>
             </div>
